@@ -1,0 +1,605 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+	
+}
+body{font-family:times new Roman;}
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+header{
+text-align:center;
+background:#390b0b;
+padding:1px;
+}
+.title{border-bottom: 1px solid blue;
+color: orange;
+font-size: 26px;
+padding: 5px;
+text-align: center;
+width: 50%;
+margin: 0 auto;
+margin-bottom:25px;
+font-family: times New Roman;}
+.report_date{
+	text-align:left;
+font-size:12px;	
+	
+}
+.report_person{text-align:left;
+font-size:12px;}
+
+.company_name{text-align:center;font-size:12px;}
+
+.logo {
+	width: 130px;
+	height: 100px;
+	border-radius: 60px;
+	position: absolute;
+	left: 130px;
+	top: 10px;
+}
+.name{font-size:22px;
+font-family:times new roman;
+font-weight:bold;
+}
+.roshid_header{ text-align:center;}
+.rohsid_logo img{width:70px;height:70px;
+position:absolute; 
+left:1px; }
+.memo_no{font-size:25px;}
+.memo_no th{text-align:center;}
+.memo_update_tbl{font-size:16px;}
+.memo_update_tbl th{background:gray;}
+.memo_update_tbl tr {text-align:center;}
+.memo_update_tbl input-type:number{width=10px;}
+
+.customer_address{
+	margin-top: 5px;
+	border-bottom:1px solid blue;}
+
+.left{float:left;}
+.right{float:right;}
+
+.paid_area{
+	margin-top:10px;
+
+	border-top:1px dashed green;
+	font-size:20px;
+}
+#single_roshid{border:1px solid black;}
+.main_memo{font-size:15px;}
+.main_memo th{background:gray;}
+#print_area{
+height:auto;
+display:block;
+text-align:center;
+}
+#print_area table{width:100%;font-size:15px;}
+#print_area table th{text-align:center;}
+#print_area table tr td{padding:3px 1px;}
+.print_header{text-align:center;margin-top:5px;font-size:20px;}
+
+
+form{font-size:16px;}
+
+/***login.php css***/
+header h1 {
+	color: blue;
+	font-family: Times New Roman;
+	font-size: 50px;
+	padding: 0;
+	margin: 0;
+}
+header h2{ color:green;font-size:24px;
+font-weight:bold;
+font-family:wide latin;}
+header h3{color:red;}
+
+.login_form{text-align: center;
+width: 60%;
+margin: 0 auto;
+}
+
+.error_message{
+	font-size:20px;
+	color:red;
+	text-align:center;}
+.success_message{ font-size:20px;
+	color:green;
+	text-align:center;
+	}
+.red{color: red;}	
+
+
+	
+#login_table {
+font-size:20px;
+
+}
+.center{text-align:center;}
+#login_table button{font-size: 20px;
+width: 18%;}
+#login_table tr td{}
+.mainmenu { width:100%; background-color:#1a6018;}
+.mainmenu ul#nav{text-align:center;margin:0;padding:0;list-style:none;}
+.mainmenu ul#nav li{display:inline}
+.mainmenu ul#nav li a{
+display:inline-block;
+color:orange;
+ padding:8px 5px;
+font-size:18px;
+font-family: Times New Roman;}
+.mainmenu ul#nav li a:hover{text-decoration:none;background:#000;color:white;}
+
+
+/* Dropdown Menu CSS */
+.mainmenu ul#nav li {position:relative}
+.mainmenu ul#nav li ul{position:absolute;left:-99999px;top:26px;background:#390b0b;width:200px;margin:0;padding:0;z-index:999;text-align:left;}
+.mainmenu ul#nav li:hover ul {left:0}
+.mainmenu ul#nav li ul li{display:block}
+.mainmenu ul#nav li ul li a{display:block;font-size:16px;}
+
+
+/* Second Level Menu */
+.mainmenu ul#nav li ul ul {background:#E1E1E1;  top:0px; margin-left: 200px;display:none}
+.mainmenu ul#nav li ul li:hover ul {display:block}
+.data_insert{
+margin: 0 auto;
+width: 50%;
+font-size:20px;
+}
+
+table{margin:0 auto;
+font-family:times New Roman;
+font-size:22px;
+min-width:50%;
+text-align:center;}
+
+
+
+table option,input{
+	min-width:100%;
+}
+.btn-success{font-size:20px; margin:0 auto;font-family:times new roman;font-weight:bold;}
+
+#selection{ width:100%;}
+.data_insert td{ 
+width:100%}
+#view_form{width:100%;
+font-size:16px;}
+#main_roshid{ 
+margin:10px;
+
+}
+#market_info{text-align:center;}
+#market_info h1{text-align:center;}
+.roshid{
+display:inline-block;
+border:1.5px solid gray;
+font-size:12px;
+max-width:1150px;
+line-height:9px;
+}
+.roshid table td{width:30%;}
+
+.roshid_header h2,p{
+	text-align:center;
+	
+	
+}.roshid_header span{ float:right;}
+
+
+.roshid h3{ text-align:center;
+text-decoration:underline;}
+.roshid strong{ float: right; }
+#print_btn{ margin-right: 281px;
+padding: 10px 20px;}
+#roshid table{width:100%;}
+footer h2{text-align:center;}
+#vara_roshid{
+margin: 22px auto 0;
+text-align: center;
+width: 65%;}
+#vara_roshid  button {color:blue;}
+#print{}
+#joma_koros_menu{text-align:center;}
+#joma_koros_menu ul li a{display:default;color:green;}
+#b_sheet_tbl{text-align:center;width:100%; font-size:20px; max-width:1170px;}
+#b_sheet_tbl th{ text-align:center;}
+
+#print_area h1{text-align:center;}
+#print_area img{text-align:right;}
+
+
+
+/* ====================== Pagination Starts ====================== */
+
+div.pagination {
+    padding: 3px;
+    margin: 3px;
+	z-index: 1000;
+	font-size: 14px;
+	margin-bottom: 20px;	
+}
+
+div.pagination a {
+    padding: 5px 7px;
+    margin: 2px;
+    border: 1px solid #0D6B23;
+    text-decoration: none; /* no underline */
+	background-color: #1DA93E;
+    color: #FFF;
+	font-weight: bold;
+}
+
+div.pagination a:hover, div.pagination a:active {
+    border: 1px solid #0D6B23;
+    color: #FFF;
+	background-color: #63BC78;
+}
+
+div.pagination span.current {
+    padding: 5px 7px;
+    margin: 2px;
+	border: 1px solid #0D6B23;
+	font-weight: bold;
+	background-color: #63BC78;
+	color: #FFF;
+	font-weight: bold;
+}
+
+div.pagination span.disabled {
+	padding: 5px 7px;
+	margin: 2px;
+	border: 1px solid #929693;
+	color: #929693;
+}
+/* ====================== Pagination Ends ====================== */	
+
+.cost_roshid{margin:0 auto; border:1px solid gray;}
+.cost_roshid table{ width:100%;
+font-size:16px;
+text-align:center;}
+.cost_roshid table th{text-align:center;}
+#yearly_report table {font-size: 20px;
+width: 75%;
+text-align: center;}
+
+#yearly_report table th{text-align:center;}
+
+/*****book View Table *****/
+table.book_tbl {
+	margin-top: 10px;
+	font-size:25px;
+}
+
+table.book_tbl tr th, table.book_tbl tr td {
+	padding: 2px;
+} 
+
+table.book_tbl tr td {
+	text-align: center;
+}
+
+table.book_tbl tr th {
+	background-color: #3d9ccd;
+	color: #fff;
+}
+
+table.book_tbl tr:nth-child(2n+1) td {
+	background-color: #d9dad9;
+}
+
+table.book_tbl tr:nth-child(2n) td {
+	background-color: #f2f5ee;
+}
+
+table.book_tbl tr td a {
+	color: #70726e;
+	text-decoration: none;
+}
+
+table.book_tbl h3 {
+	border-bottom: 2px solid #000;
+}
+
+
+

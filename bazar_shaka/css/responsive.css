@@ -1,0 +1,27 @@
+/***CSS for Small Mobile device ****/
+@media(max-width:767px){
+	
+
+	
+
+	
+	}
+/***CSS for Tablets device ****/
+@media(min-width: 768px){
+	
+
+	
+	}
+/***CSS for Medium device ****/
+@media(min-width: 992px){
+	
+	
+	
+		}
+	
+/***CSS for Learge device ****/
+@media(min-width: 1200px){
+	
+	
+	
+	}
